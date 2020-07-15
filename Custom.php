@@ -142,20 +142,7 @@ $result = mysqli_query($conn, $sql);
 
   </form>
 
-  <?php
-  if(isset($_GET['item'])){
-    echo "<p>item : ".$_GET['item']."</p>";
-    if($_GET['item']=='item1'){
-      echo "<img src='image/clock1.png' width='300px' height='auto'/>";
-    }
-    else if($_GET['item']=='item2'){
-  echo "<img src='image/clock2.png' width='300px' height='auto'/>";
-    }
-    else if($_GET['item']=='item3'){
-  echo "<img src='image/clock3.png' width='300px' height='auto'/>";
-    }
-    }
-   ?>
+
 
    <form class="" action="buy.php" method="post">
 
@@ -177,22 +164,6 @@ $result = mysqli_query($conn, $sql);
 
    </form>
 
-   <?php
-   if(isset($_POST['item'])){
-     echo "<p>item : ".$_POST['item']."</p>";
-     $what = $_POST['item'];
-     var_dump($what);
-     $sq="SELECT * FROM test WHERE item='$what'";
-     $ori = mysqli_fetch_array(mysqli_query($conn, $sq));
-     $newNum = $ori['num']-1;
-     var_dump($newNum);
-
-     $sqll = "UPDATE test SET item='$what', num='$newNum'
-          WHERE item='$what'";
-
-          $resultt = mysqli_query($conn, $sqll);
-     }
-    ?>
 </div>
 
 
@@ -223,6 +194,21 @@ $i++;
 
     </tbody>
   </table>
+  <?php
+  if(isset($_GET['item'])){
+    echo "<p>item : ".$_GET['item']."</p>";
+    if($_GET['item']=='item1'){
+      echo "<img src='image/clock1.png' width='300px' height='auto'/>";
+    }
+    else if($_GET['item']=='item2'){
+  echo "<img src='image/clock2.png' width='300px' height='auto'/>";
+    }
+    else if($_GET['item']=='item3'){
+  echo "<img src='image/clock3.png' width='300px' height='auto'/>";
+    }
+    }
+   ?>
+
 
 </div>
 

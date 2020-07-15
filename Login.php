@@ -7,24 +7,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<meta name="robots" content="index">
-	<meta name="author" content="놋토 (Knot) 시계 공식 쇼핑몰 (주)아이벨">
-	<meta property="og:title" content="놋토 (Knot) 시계 공식 쇼핑몰">
-	<meta property="og:site_name" content="놋토 (Knot) 시계 공식 쇼핑몰">
-	<meta property="og:description" content="일본 커스터마이징 시계 브랜드 '놋토'(Knot) , 2만여 가지 조합중에서 나만의 시계를 만들어보세요.">
-	<meta property="og:url" content="http://www.knot-designs.kr/">
-    <meta property="og:image" content="/m/images/title.png">
-	<meta name="naver-site-verification" content="acc0663487f3daa3ea08a90eb73003652365c7fa" />
-
-	<meta name="description" content="일본 커스터마이징 시계 브랜드 '놋토'(Knot) , 2만여 가지 조합중에서 나만의 시계를 만들어보세요.">
-	<meta itemprop="description" content="일본 커스터마이징 시계 브랜드 '놋토'(Knot) , 2만여 가지 조합중에서 나만의 시계를 만들어보세요.">
-	<meta name="twitter:description" content="일본 커스터마이징 시계 브랜드 '놋토'(Knot) , 2만여 가지 조합중에서 나만의 시계를 만들어보세요.">
 
 	<title>CUSVEN</title>
-	<link href="localhost/home/seonwoo/Desktop/CUSVEN/image/favicon.png" rel="shortcut icon" type="image/x-icon">
 <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="canonical" href="http://www.knot-designs.kr/index.php">
-	<link rel="shortcut icon" href="/pc/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/css/pc.css">
 	<script src="/js/jquery-1.7.1.min.js"></script>
@@ -148,7 +135,7 @@
                     <legend>회원로그인</legend>
 					<input type="text" name="id" placeholder="아이디 입력" data-required data-msg="아이디를 입력하세요.">
 					<input type="password" name="password" placeholder="비밀번호 입력" data-required data-msg="비밀번호를 입력하세요.">
-                    <button type="button" class="btn one only cls_login" -onclick="location.href='/m/index.php';">로그인</button>
+                    <button type="button" class="btn one only cls_login" -onclick="location.href='CheckMember.php';">로그인</button>
                 </fieldset>
             </form>
         </div> <!-- // form -->
@@ -157,7 +144,7 @@
                 <a href="/">비회원으로 시작하기</a>
                 <span class="blank"></span>
                 <a href="">아이디/비번찾기</a>
-                <a href="Signup.php">회원가입</a>
+                <a href="SignUp.php">회원가입</a>
         </div>
     </div>
 
@@ -168,11 +155,7 @@
 		<div class="f-info">
 			<div class="in-abs">
 				<p>1644-0560</p>
-				<!-- <ul>
-					<li><a href="https://www.youtube.com/" target="_blank" class="youtube"><span class="blind">유튜브</span></a></li>
-					<li><a href="https://www.instagram.com" target="_blank" class="instar"><span class="blind">인스타그램</span></a></li>
-					<li><a href="https://www.facebook.com/" target="_blank" class="facebook"><span class="blind">페이스북</span></a></li>
-				</ul> -->
+
 			</div>
 			<ul class="in-company">
 				<li>

@@ -257,7 +257,7 @@ $(function() {
       var j_id = $id.val().replace(/\s*/g, '');
       if (j_id == '') {
 
-        alert('�꾩씠�붾� �낅젰�섏꽭��.');
+        alert('아이디를 입력해주세요.');
         $id.focus();
         return;
       }

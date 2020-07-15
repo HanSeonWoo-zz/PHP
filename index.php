@@ -108,8 +108,13 @@
 
   </div>
 
+<style media="screen">
+  .BestItem{
+    text-align: center;
+  }
+</style>
   <div class="BestItem">
-    <img src="/image/favicon.png" alt="" class="img-rounded">
+    <h1>Best Item</h1>
 
   </div>
 
