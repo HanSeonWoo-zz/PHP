@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
   <title>CUSVEN</title>
-  <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
+  <link href="localhost/home/seonwoo/Desktop/CUSVEN/image/favicon.png" rel="shortcut icon" type="image/x-icon">
 
   <!-- 부트스트랩 -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -118,7 +118,9 @@ $sql = "SELECT * FROM test";
 $result = mysqli_query($conn, $sql);
  ?>
 <div class="row">
+<div class="col-md-1">
 
+</div>
 <div class="col-md-6">
   <form class="" action="" method="get">
 
@@ -175,12 +177,29 @@ $result = mysqli_query($conn, $sql);
 
    </form>
 
+   <?php
+   if(isset($_POST['item'])){
+     echo "<p>item : ".$_POST['item']."</p>";
+     $what = $_POST['item'];
+     var_dump($what);
+     $sq="SELECT * FROM test WHERE item='$what'";
+     $ori = mysqli_fetch_array(mysqli_query($conn, $sq));
+     $newNum = $ori['num']-1;
+     var_dump($newNum);
+
+     $sqll = "UPDATE test SET item='$what', num='$newNum'
+          WHERE item='$what'";
+
+          $resultt = mysqli_query($conn, $sqll);
+     }
+    ?>
 </div>
 
 
 
 
 <div class="col-md-4">
+
   <table class="table">
     <thead class="thead-dark">
       <tr>

@@ -14,34 +14,37 @@
 <?php
 
 $conn = mysqli_connect('localhost', 'root', '100djrroqkfwk', 'CUSVEN');
-if(mysqli_connect_errno()){
-  printf("Connect failed: %s\n", mysqli_connect_error());
-  exit();
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
 }
 
 $sql = "SELECT * FROM test";
 $result = mysqli_query($conn, $sql);
 
-if(isset($_POST['item'])){
-  echo "<p>item : ".$_POST['item']."</p>";
-  $what = $_POST['item'];
-  var_dump($what);
-  $sq="SELECT * FROM test WHERE item='$what'";
-  $ori = mysqli_fetch_array(mysqli_query($conn, $sq));
-  $newNum = $ori['num']-1;
-  var_dump($newNum);
+if (isset($_POST['item'])) {
+    // echo "<p>item : ".$_POST['item']."</p>";
+    $what = $_POST['item'];
+    // var_dump($what);
+    $sq="SELECT * FROM test WHERE item='$what'";
+    $ori = mysqli_fetch_array(mysqli_query($conn, $sq));
+    $newNum = $ori['num']-1;
+    // var_dump($newNum);
 
-if($newNum<0){
-  echo "<script>alert('재고가 부족합니다.');</script>";
-  //경고창
+    if ($newNum<0) {
+        echo "<script>alert('재고가 부족합니다.'); location.replace('/Custom.php');</script>";
+        // echo "<script>alert('재고가 부족합니다.'); history.back(-2);</script>";
+    //경고창
+    } else {
+        $sqll = "UPDATE test SET item='$what', num='$newNum'
+       WHERE item='$what'";
+        $resultt = mysqli_query($conn, $sqll);
+        header('Location: /Custom.php');
+    }
 }
 else{
-  $sqll = "UPDATE test SET item='$what', num='$newNum'
-       WHERE item='$what'";
-       $resultt = mysqli_query($conn, $sqll);
+  header('Location: /Custom.php');
 }
 
-  }
 
-  header('Location: /Custom.php');
  ?>
