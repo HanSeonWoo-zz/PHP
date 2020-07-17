@@ -9,17 +9,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
 	<title>CUSVEN</title>
-<link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="canonical" href="http://www.knot-designs.kr/index.php">
-	<link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="/css/pc.css">
-	<script src="/js/jquery-1.7.1.min.js"></script>
-	<script src="/js/jquery-ui.min.js"></script>
-	<script src="/js/slick.js"></script>
-	<script src="/js/pc.js"></script>
-	<script src="/js/form-1.1.js"></script>
-	<script src="/js/action.js"></script>
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
+
+	 <link rel="stylesheet" href="/css/pc.css">
+	 <link rel="stylesheet" href="/css/CUSVEN.css">
 
 	<link type="text/css" rel="stylesheet" media="all" href="/css/common.css" />
   <link type="text/css" rel="stylesheet" media="all" href="/css/styleDefault.css" />
@@ -32,66 +27,11 @@
   <link type="text/css" rel="stylesheet" media="all" href="/css/language.css" />
 
 </head>
-<body class="cls_loginform">
+<!-- <body class="cls_loginform">
 
 <div class="bgLayer"></div>
-<div class="bgConfirm"></div>
+<div class="bgConfirm"></div> -->
 <!-- @pageHeader -->
-
-<style>
-  .navbar {
-    background-color: #8a5631;
-    color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .navbar__logo {
-    width: 100px;
-    height: 50px;
-    background: url(/image/m_logo_white.png);
-    background-size: 100% auto;
-  }
-
-
-  .navbar__menu {
-    list-style: none;
-    font-size: 20px;
-  }
-
-  .navbar__menu li:hover {
-    background-color: white;
-    color: #8a5631;
-    border-radius: 4px;
-  }
-
-  .navbar__menu li {
-    padding: 8px 12px;
-  }
-
-  .navbar__set {
-    width: 100px;
-    height: 50px;
-  }
-
-  .navbar__set span {
-    height: 50px;
-    width: 50px;
-  }
-
-	body {
-		margin-top: 50px;
-	}
-
-</style>
-
 
 
 <body>
@@ -144,7 +84,7 @@
                 <a href="/">비회원으로 시작하기</a>
                 <span class="blank"></span>
                 <a href="">아이디/비번찾기</a>
-                <a href="SignUp.php">회원가입</a>
+                <a href="SignUpmin.php">회원가입</a>
         </div>
     </div>
 
@@ -234,14 +174,14 @@
     </div>
 
 
-    <div class="floatRight">
+    <!-- <div class="floatRight">
         <a href="javascript:void(0);" class="btnTop">
             <span class="material-icons">arrow_upward</span>
         </a>
         <a href="javascript:void(0);" class="btnBottom">
             <span class="material-icons">arrow_downward</span>
         </a>
-    </div>
+    </div> -->
 
 
     <a name="bottom" class="bottomPosition"> </a>

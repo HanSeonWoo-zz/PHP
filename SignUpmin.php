@@ -3,16 +3,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-
+<title>CUSVEN</title>
 	<link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/pc.css">
-	<script src="/js/jquery-1.7.1.min.js"></script>
-	<script src="/js/jquery-ui.min.js"></script>
-	<script src="/js/slick.js"></script>
-	<script src="/js/pc.js"></script>
-	<script src="/js/form-1.1.js"></script>
-	<!-- <script src="/js/action.js"></script> -->
+
 	<script src="/js/CUSVEN.js"></script>
 
 </head>

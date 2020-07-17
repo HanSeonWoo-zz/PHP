@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body .lang_txt {display: none;}
+body .lang_txt.selected {display: block;}
+
+.order-wrap.list .list li .won span{display: none;}
+.order-wrap.list .list li .won span.selected{display: inline-block;}
+.order-wrap.list .list li .state span{display: none;}
+.order-wrap.list .list li .state span.selected{display: block;}

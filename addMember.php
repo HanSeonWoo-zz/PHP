@@ -17,4 +17,5 @@ $sql_up = "INSERT INTO member(id, password, name, phone, email, address)
           VALUES('{$_POST['id']}', '{$_POST['password']}', '{$_POST['name']}', '{$_POST['cphone1']}', '{$_POST['email']}', '{$_POST['address2']}')";
 $result = mysqli_query($conn, $sql_up);
 var_dump($result);
+header("Location:index.php");
 ?>

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-  <script type="text/javascript" src="http://livejs.com/live.js "></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,69 +9,9 @@
   <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
   <!-- 부트스트랩 -->
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/CUSVEN.css">
 
-  <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
-  <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <script src="https://kit.fontawesome.com/64014525b9.js" crossorigin="anonymous"></script>
 </head>
-<style>
-  .navbar {
-    background-color: #8a5631;
-    color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .navbar__logo {
-    width: 100px;
-    height: 50px;
-    background: url(/image/m_logo_white.png);
-    background-size: 100% auto;
-  }
-
-
-  .navbar__menu {
-    list-style: none;
-    font-size: 20px;
-  }
-
-  .navbar__menu li:hover {
-    background-color: white;
-    color: #8a5631;
-    border-radius: 4px;
-  }
-
-  .navbar__menu li {
-    padding: 8px 12px;
-  }
-
-  .navbar__set {
-    width: 100px;
-    height: 50px;
-  }
-
-  .navbar__set span {
-    height: 50px;
-    width: 50px;
-  }
-
-  body{
-    margin-top: 50px;
-  }
-</style>
-
-
 
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -94,7 +32,7 @@
       </a>
       <ul class="dropdown-menu" role="menu">
         <li><a href="/Login.php">Login</a></li>
-        <li><a href="/SignUp.php">Sign Up</a></li>
+        <li><a href="/SignUpmin.php">Sign Up</a></li>
         <li><a href="#">a</a></li>
         <li><a href="#">b</a></li>
       </ul>
@@ -118,9 +56,9 @@
 
   </div>
 
+  <div class="BestItem_Body">
 
-
-
+  </div>
 
 
   <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
