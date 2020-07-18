@@ -1,3 +1,18 @@
+.View-Frame{
+z-index: 100;
+}
+.View-Head{
+  z-index: 110;
+
+}
+.View-Strap{
+  z-index: 90;
+
+}
+.View-Arrow{
+z-index: 120;
+}
+
 #Clock-View{
   position: fixed;
   right: 0;
@@ -31,6 +46,7 @@
     height: 50px;
     background: url(/image/m_logo_white.png);
     background-size: 100% auto;
+    margin: 10px 30px;
 
   }
 
