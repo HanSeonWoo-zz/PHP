@@ -1,0 +1,80 @@
+
+
+
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+
+
+
+
+<title>코로나 관련 팝업</title>
+<meta name="_csrf_parameter" content="_csrf" /><meta name="_csrf_header" content="X-CSRF-TOKEN" /><meta name="_csrf" content="d8d8c2df-3ec3-4ed3-8e38-3335e99067dd" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<link rel="stylesheet" href="/css/reset.css?v=1.0">
+<link rel="stylesheet" href="/css/common.css?v=1.0">
+<link rel="stylesheet" href="/css/jquery-ui.css?v=1.0">
+<link rel="stylesheet" href="/css/seon.css?v=1.0">
+<link rel="stylesheet" href="/css/style.css?v=1.0">
+<script src="/js/jquery-1.11.2.min.js?v=1.0"></script>
+<script src="/js/jquery-ui.js?v=1.0"></script>
+<script src="/js/ui.js?v=1.0"></script>
+</head>
+<body>
+	<div class="pop_wrap">
+
+<script type="text/javascript">
+//<![CDATA[
+
+$(document).ready(function(){
+
+});
+
+/*
+ * 쿠키값 설정
+ */
+function setCookie( name, value, expiredays ) {
+	var today = new Date();
+	today.setDate( today.getDate() + expiredays );
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + today.toGMTString() + ";";
+}
+
+/*
+ * 오늘 하루 이창을 열지않음
+ */
+function checkClose() {
+	setCookie("main_notie_pop20200228", "done", 1);
+	window.close();
+}
+
+/*
+ * 팝업 이미지 클릭시 이동
+ */
+function goNotice(){
+	window.open("http://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=10762", '', '');
+	window.close();
+}
+
+//]]>
+</script>
+<div>
+	<a href="#">
+		<img src="/images/common/popup_notice_page20200228.jpg" onclick="goNotice()" alt="코라나19 민생,경제 종합대책. 코로나19 대응 더욱 강화된 고용노동부 지원사업을 알려드립니다. &lt;주용내용 &gt;1.기업의 경영상 어려움에 대응하기 위한 고용유지지원금  지원금액  상향(2/3->3/4 수준, 6개월 한시) 2. 코로나19 지역고용대응 특별지원 사업을 신설해 지역 맞춤형 고용안정 대책 추진 3. 관광 관련 업종 등을 특별고용지원업종으로 지정 추진 4.자녀돌봄 근로자를 위한 가족돌봄비용 긴급지원(1인당 일 5만원, 부부 합산 최대 50만원) 5.저소득 근로자와 특수형태근로종사자 대상 생활안정자금 융자 대폭 확대, 소득요건 완화 6.체불임금에 대한 체당금 지원, 무료법률구조지원 확대 등. 보도참고자료 보기">
+	</a>
+	<p style="text-align: right;">
+		<input type="checkbox" id="nomore" onclick='checkClose()'>
+		<label for="chkbox">오늘 하루 이창을 열지않음</label>
+	</p>
+</div>
+
+
+
+		<a href="#n" class="pop_close" onclick="window.close()">팝업닫기</a>
+	</div>
+</body>
+</html>

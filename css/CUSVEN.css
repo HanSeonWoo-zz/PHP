@@ -3,9 +3,9 @@
 } */
 
 #Clock-View {
-  /* flex: 0 1 auto; */
-  /* position: relative; */
-  /* display: block; */
+  flex: 0 1 auto;
+  position: relative;
+  display: block;
 }
 #Clock-View img {
   width: 200px;
@@ -31,9 +31,8 @@ li{
   width: 100px;
   height: 100px;
 
-
-
 }
+
 
 .View-Frame {
   z-index: 100;
@@ -119,4 +118,9 @@ body {
 
 #customBody {
   margin-top: 100px;
+}
+
+/*  */
+.BestItem{
+  text-align: center;
 }
