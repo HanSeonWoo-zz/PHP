@@ -1,19 +1,57 @@
-.View-Frame{
-z-index: 100;
+/* * {
+  border: 1px solid red;
+} */
+
+#Clock-View {
+  /* flex: 0 1 auto; */
+  /* position: relative; */
+  /* display: block; */
 }
-.View-Head{
+#Clock-View img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#Clock-Select ul{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+li{
+  list-style: none;
+}
+
+
+#Clock-Select img {
+  width: 100px;
+  height: 100px;
+
+
+
+}
+
+.View-Frame {
+  z-index: 100;
+}
+
+.View-Head {
   z-index: 110;
-
 }
-.View-Strap{
+
+.View-Strap {
   z-index: 90;
-
-}
-.View-Arrow{
-z-index: 120;
 }
 
-#Clock-View{
+.View-Arrow {
+  z-index: 120;
+}
+
+#Clock-View {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -21,64 +59,64 @@ z-index: 120;
   top: 100px;
   z-index: 0;
 }
-#Clock-Select{
+
+#Clock-Select {
   margin-top: 50px;
 }
 
-  .navbar {
-    background-color: #8a5631;
-    color: #000000;
-    display: flex;
-    justify-content: space-between !important;
-    align-items: center;
-    padding: 8px 12px;
-    position: fixed;
+.navbar {
+  background-color: #8a5631;
+  color: #000000;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  padding: 8px 12px;
+  position: fixed;
+}
 
-  }
+a {
+  text-decoration: none;
+  color: white;
+}
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
+.navbar__logo {
+  width: 100px;
+  height: 50px;
+  background: url(/image/m_logo_white.png);
+  background-size: 100% auto;
+  margin: 10px 30px;
+}
 
-  .navbar__logo {
-    width: 100px;
-    height: 50px;
-    background: url(/image/m_logo_white.png);
-    background-size: 100% auto;
-    margin: 10px 30px;
+.navbar__menu {
+  list-style: none;
+  font-size: 20px;
+}
 
-  }
+.navbar__menu li:hover {
+  background-color: white;
+  color: #8a5631;
+  border-radius: 4px;
+}
 
-  .navbar__menu {
-    list-style: none;
-    font-size: 20px;
-  }
+.navbar__menu li {
+  padding: 8px 12px;
+}
 
-  .navbar__menu li:hover {
-    background-color: white;
-    color: #8a5631;
-    border-radius: 4px;
-  }
+.navbar__set {
+  width: 100px;
+  height: 50px;
+}
 
-  .navbar__menu li {
-    padding: 8px 12px;
-  }
+.navbar__set span {
+  height: 50px;
+  width: 50px;
+}
 
-  .navbar__set {
-    width: 100px;
-    height: 50px;
-  }
+body {
+  font-size: 24px;
+  margin-top: 50px;
+}
 
-  .navbar__set span {
-    height: 50px;
-    width: 50px;
-  }
-  body{
-    font-size: 24px;
-    margin-top: 50px;
-  }
-
-  #customBody{
-    margin-top: 100px;
-  }
+#customBody {
+  margin-top: 100px;
+}
