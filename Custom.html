@@ -19,6 +19,8 @@
   <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+  <script defer src="js/CUSVEN.js"></script>
+
 </head>
 
 
@@ -50,33 +52,22 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-6 fixed-View" id="Clock-View">
-        <!-- 이미지가 보이는 부분 -->
-        <div class="View-Frame">
-<img src="image/Clock/Frame/1.png" alt="">
+      <div class="col-6" id = "View-Sticky">
+        <div class="" id="Clock-View">
+          <!-- 이미지가 보이는 부분 -->
+          <div class="View View-Frame">
+            <img src="image/Clock/Frame/1.png" alt="" id = "Frame">
+          </div>
+          <div class="View View-Head">
+            <img src="image/Clock/Head/1.png" alt="" id = "Head">
+          </div>
+          <div class="View View-Strap" >
+            <img src="image/Clock/Strap/1_2.png" alt="" id = "Strap">
+          </div>
+          <div class="View View-Arrow">
+            <img src="image/Clock/Arrow/1.png" alt="" id = "Arrow">
+          </div>
         </div>
-        <div class="View-Head">
-<img src="image/Clock/Head/1.png" alt="">
-        </div>
-        <div class="View-Strap">
-<img src="image/Clock/Strap/1_2.png" alt="">
-        </div>
-        <div class="View-Arrow">
-
-        </div>
-
-        <h1>뷰</h1>
-        <h1>뷰</h1>
-        <h1>뷰</h1>
-        <h1>뷰</h1>
-        <h1>뷰</h1>
-        <h1>뷰</h1>
-        <h1>뷰</h1>
-
-      </div>
-
-      <div class="col-6">
-        <!-- 뷰가 Fixed이기에 공간을 채워주기 위한 div -->
       </div>
 
       <div class="col-6" id="Clock-Select">
@@ -86,10 +77,10 @@
 
         <div class="Select-Frame">
           <ul>
-            <li><a href="#"><img src="/image/Clock/Frame/1.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Frame/2.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Frame/3.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Frame/4.png" class="img-thumbnail" alt=""></a></li>
+            <li><a href="#"><img src="/image/Clock/Frame/1.png" class="img-thumbnail" alt="" onclick="changeFrame(1)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Frame/2.png" class="img-thumbnail" alt="" onclick="changeFrame(2)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Frame/3.png" class="img-thumbnail" alt="" onclick="changeFrame(3)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Frame/4.png" class="img-thumbnail" alt="" onclick="changeFrame(4)"></a></li>
           </ul>
         </div>
 
@@ -98,10 +89,10 @@
         </div>
         <div class="Select-Head">
           <ul>
-            <li><a href="#"><img src="/image/Clock/Head/1.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Head/2.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Head/3.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Head/4.png" class="img-thumbnail" alt=""></a></li>
+            <li><a href="#"><img src="/image/Clock/Head/1.png" class="img-thumbnail" alt="" onclick="changeHead(1)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Head/2.png" class="img-thumbnail" alt="" onclick="changeHead(2)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Head/3.png" class="img-thumbnail" alt="" onclick="changeHead(3)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Head/4.png" class="img-thumbnail" alt="" onclick="changeHead(4)"></a></li>
           </ul>
         </div>
 
@@ -110,10 +101,10 @@
         </div>
         <div class="Select-Strap">
           <ul>
-            <li><a href="#"><img src="/image/Clock/Strap/1.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Strap/2.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Strap/3.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Strap/4.png" class="img-thumbnail" alt=""></a></li>
+            <li><a href="#"><img src="/image/Clock/Strap/1.png" class="img-thumbnail" alt="" onclick="changeStrap(1)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Strap/2.png" class="img-thumbnail" alt="" onclick="changeStrap(2)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Strap/3.png" class="img-thumbnail" alt="" onclick="changeStrap(3)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Strap/4.png" class="img-thumbnail" alt="" onclick="changeStrap(4)"></a></li>
           </ul>
         </div>
         <div class="step">
@@ -121,33 +112,31 @@
         </div>
         <div class="Select-Arrow">
           <ul>
-            <li><a href="#"><img src="/image/Clock/Arrow/1.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Arrow/2.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Arrow/3.png" class="img-thumbnail" alt=""></a></li>
-            <li><a href="#"><img src="/image/Clock/Arrow/4.png" class="img-thumbnail" alt=""></a></li>
+            <li><a href="#"><img src="/image/Clock/Arrow/1.png" class="img-thumbnail" alt="" onclick="changeArrow(1)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Arrow/2.png" class="img-thumbnail" alt="" onclick="changeArrow(2)"></a></li>
+            <li><a href="#"><img src="/image/Clock/Arrow/3.png" class="img-thumbnail" alt="" onclick="changeArrow(3)"></a></li>
           </ul>
         </div>
 
-
+        <div class="Button">
+          <input type="button" class="btn btn-outline-dark" name="" value="장바구니">
+          <input type="button" class="btn btn-outline-primary" name="" value="구매하기">
+        </div>
 
       </div>
-    </div> <!--row-->
-  </div> <!--container -->
+
+
+
+
+    </div>
+    <!--row-->
+  </div>
+  <!--container -->
 
 
 
 
 
-  <?php
-$conn = mysqli_connect('localhost', 'root', '100djrroqkfwk', 'CUSVEN');
-if(mysqli_connect_errno()){
-  printf("Connect failed: %s\n", mysqli_connect_error());
-  exit();
-}
-
-$sql = "SELECT * FROM test";
-$result = mysqli_query($conn, $sql);
- ?>
   <div class="row" id="customBody">
     <div class="col-md-1">
 
