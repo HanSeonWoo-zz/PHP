@@ -1,6 +1,13 @@
 /* * {
   border: 1px solid red;
 } */
+.Hey{
+  width:30px;
+}
+.form-inline{
+  display: inline;
+}
+
 .cart .right{
   flex:0 1 30%;
   flex-direction: column;
@@ -11,9 +18,6 @@
 .cart{
   border: 1px solid gray;
   flex-wrap: wrap;
-}
-.cart input{
-  width:30px;
 }
 
 

@@ -104,9 +104,15 @@ echo "</div>";
 echo "<div class='right'>";
 echo "<div class='count'>";
 echo "<button type='button' class='btn btn-outline-dark'>Up</button>";
-echo "<input type= 'number' value='1'>";
+echo "<input type= 'number' class='Hey' value='1'>";
 echo "<button type='button' class='btn btn-outline-dark'>Down</button>";
-echo "<button type='button' class='btn btn-outline-dark' value='$No' name='delete'>삭제</button>";
+
+// echo "<button type='button' class='btn btn-outline-dark' value='$No' name='delete'>삭제</button>";
+echo "<form class='form-inline' action='cartDelete.php' method='post'>";
+echo "<input type='hidden' name='No' value='$No'>";
+echo "<input type='submit' class='btn btn-outline-dark' name='' value='삭제'>";
+echo "</form>";
+
 echo "</div>";
 echo "</div>";
 echo "</div>";
@@ -115,6 +121,8 @@ echo "</div>";
 
 
  ?>
+
+
 
  <nav aria-label="Page navigation example">
 <ul class="pagination justify-content-center">

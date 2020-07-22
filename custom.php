@@ -125,7 +125,7 @@
             <input type="hidden" id="ArrowCart" name="arrow" value="1">
             <input type="submit" class="btn btn-outline-dark" name="" value="장바구니">
           </form>
-          <input type="button" class="btn btn-outline-dark" name="" value="장바구니" onclick="carting(FrameCart.value, HeadCart.value, StrapCart.value, ArrowCart.value)">
+          <!-- <input type="button" class="btn btn-outline-dark" name="" value="장바구니" onclick="carting(FrameCart.value, HeadCart.value, StrapCart.value, ArrowCart.value)"> -->
           <input type="button" class="btn btn-outline-primary" name="" value="구매하기">
         </div>
 
