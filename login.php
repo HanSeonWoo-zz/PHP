@@ -4,6 +4,7 @@
 session_start(); // 세션
 if($_SESSION['id']==null) { // 로그인 하지 않았다면
 ?>
+isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])
 
 
 <body>
