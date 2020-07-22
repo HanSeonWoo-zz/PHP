@@ -96,15 +96,19 @@ a {
 .navbar__logo {
   width: 100px;
   height: 50px;
-  background: url(/image/m_logo_white.png);
   background-size: 100% auto;
   margin: 10px 30px;
+}
+.navbar__logo img{
+  width:inherit;
+  height: inherit;
 }
 
 .navbar__menu {
   list-style: none;
   font-size: 20px;
 }
+
 
 .navbar__menu li:hover {
   background-color: white;
@@ -116,22 +120,14 @@ a {
   padding: 8px 12px;
 }
 
-.navbar__set {
-  width: 100px;
-  height: 50px;
+.navbar__set a {
+  color: black;
 }
-
-.navbar__set span {
-  height: 50px;
-  width: 50px;
+-navbar__set ul{
+  display: flex;
 }
 
 
-#customBody {
-  margin-top: 100px;
-}
-
-/*  */
 .BestItem{
   text-align: center;
 }

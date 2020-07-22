@@ -1,67 +1,8 @@
-<html lang="ko"><head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-
-<title>CUSVEN</title>
-	<link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
-
-  <link rel="stylesheet" href="/css/bootstrap.css">
-	<link rel="stylesheet" href="/css/pc.css">
-
-	<script src="/js/CUSVEN.js"></script>
-
-</head>
-
-
-<header id="pageHeader">
-    <div class="gnbWrap">
-        <h1>
-            <a href="/index.php"><img src="/image/pc_logo.png" alt="home"></a>
-        </h1>
-        <nav>
-            <ul class="gnb">
-                <li class="subMenu"><a href="Custom.php">커스텀하기</a></li>
-
-                <li class="subMenu items">
-                    <a href="">아이템</a>
-                    <ul class="sub">
-                        <li>
-                            <a href="">ALL</a>
-                        </li>
-                        <li>
-                            <a href="">Watch Head</a>
-                        </li>
-                        <li>
-                            <a href="">Strap</a>
-                        </li>
-                        <li>
-                            <a href="">Others</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-				<div class="topGnb">
-					<div class="accTop">
-							<ul class="accNav on">
-									<li><a href="SignUp.php">회원가입</a></li>
-									<li><a href="Login.php">로그인</a></li>
-									<li>
-											<a href="/pc/views/mypageCart_noMember.php" class="cart">
-													<i class="material-icons">shopping_cart</i>
-													<span class="cartCount">0</span>
-											</a>
-									</li>
-									<li><a href="/pc/views/customCenter.php">고객센터</a></li>
-
-							</ul>
-					</div> <!-- // accTop -->
-				</div>
-
-    </div>
-</header>
-
+<?php include("head.php") ?>
+<body>
+  <?php
+    include("nav.php");
+  ?>
 
 <body class="cls_page_member__insertform">
 

@@ -1,16 +1,30 @@
-<!DOCTYPE html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body onload="window.resizeTo(400,200)">
-    <div class="container">
-        <div id="popup" align="center" style="display:block">
-            <h1>시원하게 맥주한잔 하실래요</h1>
-            <img src='image/clock2.png'>
-            <input class= 'close-button' type="checkbox" name="close" value="OK"/>하루동안 이 창을 열지 않음
-        </div>
-    </div>
-  </body>
-</html>
+<script type="text/javascript">
+	<!--
+
+	// 쿠키를 만듭니다. 아래 closeWin() 함수에서 호출됩니다
+
+	function setCookie( name, value, expiredays )
+	{
+			var todayDate = new Date();
+			todayDate.setDate( todayDate.getDate() + expiredays );
+			document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+			}
+
+	// 체크후 닫기버튼을 눌렀을때 쿠키를 만들고 창을 닫습니다
+
+	function closeWin()
+	{
+			if ( document.pop.Notice.checked )
+			setCookie( "Notice", "done" , 1);  // 오른쪽 숫자는 쿠키를 유지할 기간을 설정합니다
+			self.close();
+	}
+	// -->
+
+</script>
+
+<form name="pop">
+  <h1>시계 사세요~</h1>
+  <img src='image/clock2.png' width="300px" height="300px">
+	<input type="checkbox" name="Notice" value="">다음부터 공지창 띄우지 않음
+	<input type="button" value="닫기" onclick="closeWin()">
+</form>

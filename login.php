@@ -1,39 +1,4 @@
-<!-- fixedHeader -->
-
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-
-	<title>CUSVEN</title>
-
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon">
-
-	<link rel="stylesheet" href="/css/보류/pc.css">
-	<link rel="stylesheet" href="/css/CUSVEN.css">
-	<link rel="stylesheet" href="/css/bootstrap.css">
-
-	<!-- <link type="text/css" rel="stylesheet" media="all" href="/css/보류/common.css" /> -->
-	<!-- <link type="text/css" rel="stylesheet" media="all" href="/css/보류/styleDefault.css" /> -->
-	<link type="text/css" rel="stylesheet" media="all" href="/css/보류/layout.css" />
-	<!-- <link type="text/css" rel="stylesheet" media="all" href="/css/보류/main.css" /> -->
-	<!-- <link type="text/css" rel="stylesheet" media="all" href="/css/보류/content.css" /> -->
-	<!-- <link type="text/css" rel="stylesheet" media="all" href="/css/animate.css" /> -->
-	<!-- <link type="text/css" rel="stylesheet" media="all" href="/css/owl.carousel.min.css" /> -->
-	<!-- <link rel="stylesheet" type="text/css" href="/css/보류/datepicker.css"> -->
-	<link type="text/css" rel="stylesheet" media="all" href="/css/보류/language.css" />
-
-	<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-	<!-- <script defer src="js/CUSVEN.js"></script> -->
-
-</head>
+<?php include("head.php") ?>
 
 <?php
 session_start(); // 세션
@@ -42,32 +7,9 @@ if($_SESSION['id']==null) { // 로그인 하지 않았다면
 
 
 <body>
-	<nav class="navbar fixed-top">
-
-		<a href="./">
-			<div class="navbar__logo">
-
-			</div>
-		</a>
-
-		<div class="navbar__menu">
-			<li><a href="custom.php">커스텀하기</a></li>
-		</div>
-
-		<div class="navbar__set">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
-				<span class="glyphicon glyphicon-menu-hamburger fa-2x"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="/login.php">Login</a></li>
-				<li><a href="/signUp.php">Sign Up</a></li>
-				<li><a href="#">a</a></li>
-				<li><a href="#">b</a></li>
-			</ul>
-		</div>
-
-	</nav>
-
+	<?php
+	  include("nav.php");
+	?>
 
 	<header class="subHeader Title">
 		<h2>회원 로그인</h2>
