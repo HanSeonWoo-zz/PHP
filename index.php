@@ -27,8 +27,8 @@
     // window.open("/home_popup", "_blank", "width=400, height=500, menubar=no, status=no, toolbar=no");
     window.open("test.html", "width=400px, height=500px, menubar=no, status=no, toolbar=no");
   }
+  document.cookie;
 </script>
-
 
 <body>
   <nav class="navbar fixed-top">
@@ -39,13 +39,13 @@
     </a>
 
     <div class="navbar__menu">
-      <li><a href="Custom.html">커스텀하기</a></li>
+      <li><a href="custom.php">커스텀하기</a></li>
     </div>
 
     <div class="navbar__set">
       <ul>
-        <li><a href="/Login.html">Login</a></li>
-        <li><a href="/SignUpmin.html">Sign Up</a></li>
+        <li><a href="/login.php">Login</a></li>
+        <li><a href="/signUpmin.php">Sign Up</a></li>
         <li><a href="#">a</a></li>
         <li><a href="#">b</a></li>
       </ul>
@@ -66,6 +66,8 @@
   <div class="BestItem_Body">
 
   </div>
+
+
 
 
 </body>

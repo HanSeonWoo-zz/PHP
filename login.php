@@ -35,6 +35,12 @@
 
 </head>
 
+<?php
+session_start(); // 세션
+if($_SESSION['id']==null) { // 로그인 하지 않았다면
+?>
+
+
 <body>
 	<nav class="navbar fixed-top">
 
@@ -45,7 +51,7 @@
 		</a>
 
 		<div class="navbar__menu">
-			<li><a href="Custom.php">커스텀하기</a></li>
+			<li><a href="custom.php">커스텀하기</a></li>
 		</div>
 
 		<div class="navbar__set">
@@ -53,8 +59,8 @@
 				<span class="glyphicon glyphicon-menu-hamburger fa-2x"></span>
 			</a>
 			<ul class="dropdown-menu" role="menu">
-				<li><a href="/Login.php">Login</a></li>
-				<li><a href="/SignUp.php">Sign Up</a></li>
+				<li><a href="/login.php">Login</a></li>
+				<li><a href="/signUp.php">Sign Up</a></li>
 				<li><a href="#">a</a></li>
 				<li><a href="#">b</a></li>
 			</ul>
@@ -96,7 +102,7 @@
 			<a href="/">비회원으로 시작하기</a>
 			<span class="blank"></span>
 			<a href="">아이디/비번찾기</a>
-			<a href="SignUpmin.php">회원가입</a>
+			<a href="signUpmin.php">회원가입</a>
 		</div>
 	</div>
 
@@ -112,66 +118,40 @@
 				<ul class="in-company">
 					<li>
 						<span class="lang_txt KOR selected">상호명 가디우스</span>
-						<span class="lang_txt ENG">Company Name Gadius</span>
-						<span class="lang_txt CHI">商品名Gadius</span>
 					</li>
 					<li>
 						<span class="lang_txt KOR selected">대표 유혜미, 경진건</span>
-						<span class="lang_txt ENG">Representative Yoo Hye-mi, Gyeongjin-gun</span>
-						<span class="lang_txt CHI">京津郡柳惠美议员</span>
 					</li>
 					<li>
 						<span class="lang_txt KOR selected">
-							<!-- 서울특별시 서초구 반포대로30길 81, 12층 1221호(서초동, 웅진타워) -->
 							서울특별시 서초구 서초중앙로 48, 2동(서초동, 한솔빌딩)
 						</span>
-						<span class="lang_txt ENG">
-							<!-- 1221, 12F, 81, Banpo-daero 30-gil, Seocho-gu, Seoul (Wonjin Tower, Seocho-dong) -->
-							48, Seochojungang-ro, Seocho-gu, Seoul (Seocho-dong, Hansol Building)
-						</span>
-						<span class="lang_txt CHI">
-							<!-- 首尔市瑞草区半坡大路30街81号12楼1221（瑞草洞元津塔) -->
-							首爾市瑞草區瑞草郡江路48（瑞草洞Hansol大樓）
-						</span>
 					</li>
-					<!-- <li>통신판매신고번호 236-871-4887</li> -->
 					<li>
 						<span class="lang_txt KOR selected">사업자등록번호 387-86-01711</span>
-						<span class="lang_txt ENG">Business registration number 387-86-01711</span>
-						<span class="lang_txt CHI">商业登记号码 387-86-01711</span>
 					</li>
 				</ul>
 				<ul class="in-cs">
 					<li>
 						<span class="lang_txt KOR selected">고객센터 1644-0560</span>
-						<span class="lang_txt ENG">Service center 387-86-01711</span>
-						<span class="lang_txt CHI">客户中心 387-86-01711</span>
 
 					</li>
 					<li>
 						<span class="lang_txt KOR selected">E-mail : godius@cusven.com</span>
-						<span class="lang_txt ENG">E-mail : godius@cusven.com</span>
-						<span class="lang_txt CHI">电子邮件 : godius@cusven.com</span>
 					</li>
 					<li>
 						<span class="lang_txt KOR selected">©2020 REPUBLIQ All rights reserved.</span>
-						<span class="lang_txt ENG">©2020 REPUBLIQ All rights reserved.</span>
-						<span class="lang_txt CHI">©2020 REPUBLIQ保留所有权利。</span>
 					</li>
 				</ul>
 				<ul class="in-link">
 					<li style="color: rgba(255,255,255,1);">
 						<a href="javascript:void(0);" class="policy-btn" attr="2">
 							<span class="lang_txt KOR selected" style="color: rgba(255,255,255,1);">개인정보처리방침</span>
-							<span class="lang_txt ENG" style="color: rgba(255,255,255,1);">Policy</span>
-							<span class="lang_txt CHI" style="color: rgba(255,255,255,1);">定策</span>
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0);" class="policy-btn">
 							<span class="lang_txt KOR selected" style="color: rgba(255,255,255,1);">이용약관</span>
-							<span class="lang_txt ENG" style="color: rgba(255,255,255,1);">Terms</span>
-							<span class="lang_txt CHI" style="color: rgba(255,255,255,1);">弱冠</span>
 						</a>
 					</li>
 				</ul>
@@ -179,11 +159,17 @@
 		</div>
 	</footer>
 
+	<?php
 
+	}else{ // 로그인 했다면
 
-	</div>
-	</div>
-	</div>
+	   echo "<center><br><br><br>";
+	   echo $_SESSION['name']."(".$_SESSION['id'].")님이 로그인 하였습니다.";
+	   echo "<a href='logout.php'><input type='button' value='Logout'></a>";
+	   echo "</center>";
+	}
+
+	?>
 
 </body>
 

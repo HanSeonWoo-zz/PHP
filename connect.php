@@ -13,11 +13,11 @@ if ($con->connect_errno) { die('Connection Error : '.$con->connect_error); } // 
 ?>
 
 
-$conn = mysqli_connect('localhost', 'root', '100djrroqkfwk', 'CUSVEN');
+<!-- $conn = mysqli_connect('localhost', 'root', '100djrroqkfwk', 'CUSVEN');
 if(mysqli_connect_errno()){
   printf("Connect failed: %s\n", mysqli_connect_error());
   exit();
 }
 
 $sql = "SELECT * FROM test";
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql); -->
