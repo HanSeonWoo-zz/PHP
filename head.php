@@ -8,7 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <!-- <link type="text/css" rel="stylesheet" media="all" href="/css/보류/layout.css" /> -->
-  <!-- <link rel="stylesheet" href="/css/보류/pc.css"> -->
+  <link rel="stylesheet" href="/css/보류/pc.css">
   <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/css/CUSVEN.css">
 

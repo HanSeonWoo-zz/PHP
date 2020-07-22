@@ -54,7 +54,7 @@
         <div class="" id="Clock-View">
           <!-- 이미지가 보이는 부분 -->
           <div class="View View-Frame">
-            <img src="image/Clock/Frame/1.png" alt="" id = "Frame">
+            <img src="image/Clock/Frame/1.png" alt="" id = "Frame" >
           </div>
           <div class="View View-Head">
             <img src="image/Clock/Head/1.png" alt="" id = "Head">
@@ -117,7 +117,15 @@
         </div>
 
         <div class="Button">
-          <input type="button" class="btn btn-outline-dark" name="" value="장바구니" onclick="location.href='cart.php'">
+          <!-- <input type="button" class="btn btn-outline-dark" name="" value="장바구니" onclick="location.href='cart.php'"> -->
+          <form class="" action="cartSave.php" method="post">
+            <input type="hidden" id="FrameCart" name="frame" value="1">
+            <input type="hidden" id="HeadCart" name="head" value="1">
+            <input type="hidden" id="StrapCart" name="strap" value="1">
+            <input type="hidden" id="ArrowCart" name="arrow" value="1">
+            <input type="submit" class="btn btn-outline-dark" name="" value="장바구니">
+          </form>
+          <input type="button" class="btn btn-outline-dark" name="" value="장바구니" onclick="carting(FrameCart.value, HeadCart.value, StrapCart.value, ArrowCart.value)">
           <input type="button" class="btn btn-outline-primary" name="" value="구매하기">
         </div>
 

@@ -15,7 +15,7 @@
     <ul class="list-group list-group-horizontal">
       <li class="list-group-item"><a href="/login.php">로그인</a></li>
       <li class="list-group-item"><a href="/signUpmin.php">회원가입</a></li>
-      <li class="list-group-item"><a href="#">장바구니</a> <span class="badge badge-primary badge-pill">14</span></li>
+      <li class="list-group-item"><a href="cart.php">장바구니</a> <span class="badge badge-primary badge-pill">14</span></li>
       <li class="list-group-item"><a href="serviceHome.php">고객센터</a></li>
     </ul>
   </div>

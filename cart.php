@@ -3,7 +3,8 @@ include("head.php");
 ?>
 
 <body>
-  <?php include("nav.php"); ?>
+  <?php include("nav.php");
+  include("connect.php")?>
 
   <!-- <section class="Mypage Main">
 
@@ -52,26 +53,81 @@ include("head.php");
 
           <div class="col-6" id="cart-contents">
             <h3>장바구니</h3>
-            <div class="cart row">
+<?php
+$sql="select * from cart ORDER BY No DESC";
+$result=mysqli_query($con,$sql);
+if(isset($_GET['page'])){
+  $page = $_GET['page'];
+}
+else{
+  $page = 1;
+}
 
-              <input type="checkbox" name="" value="">
-              <div class="image">
-                <img src="image/Clock/Frame/1.png" class="img-thumbnail" alt="">
-                <img src="image/Clock/Head/1.png" class="img-thumbnail" alt="">
-                <img src="image/Clock/Strap/1.png" class="img-thumbnail" alt="">
-                <img src="image/Clock/Arrow/1.png" class="img-thumbnail" alt="">
-              </div>
-              <div class="right">
-                <div class="count">
-                  <button type="button" class="btn btn-outline-dark">Up</button>
-                  <input type="number" value="1">
-                  <button type="button" class="btn btn-outline-dark">Down</button>
-                  <button type="button" class="btn btn-outline-dark" name="delete">삭제</button>
-                </div>
-              </div>
+while($page>1){
+  mysqli_fetch_array($result);
+  mysqli_fetch_array($result);
+  mysqli_fetch_array($result);
+  mysqli_fetch_array($result);
+  mysqli_fetch_array($result);
+  $page--;
+}
 
-            </div>
+$i=5;
+while( ($arr= mysqli_fetch_array($result)) && $i>0){
+$i--;
+$No = $arr['No'];
+  $frame = $arr['frame'];
+  $head = $arr['head'];
+  $strap = $arr['strap'];
+  $arrow = $arr['arrow'];
+echo "<div class = 'cart row'>";
+  echo "<input type='checkbox' name='' value=''>";
+  echo "<div class='image'>";
+  echo "<img src='image/Clock/Frame/";
+  echo $frame;
+  echo ".png' class='img-thumbnail' alt=''>";
+
+  echo "<img src='image/Clock/Head/";
+  echo $head;
+  echo ".png' class='img-thumbnail' alt=''>";
+
+  echo "<img src='image/Clock/Strap/";
+  echo $strap;
+  echo ".png' class='img-thumbnail' alt=''>";
+
+  echo "<img src='image/Clock/Arrow/";
+  echo $arrow;
+  echo ".png' class='img-thumbnail' alt=''>";
+
+echo "</div>";
+
+echo "<div class='right'>";
+echo "<div class='count'>";
+echo "<button type='button' class='btn btn-outline-dark'>Up</button>";
+echo "<input type= 'number' value='1'>";
+echo "<button type='button' class='btn btn-outline-dark'>Down</button>";
+echo "<button type='button' class='btn btn-outline-dark' value='$No' name='delete'>삭제</button>";
+echo "</div>";
+echo "</div>";
+echo "</div>";
+}
+
+
+
+ ?>
+
+ <nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+<li class="page-item"><a class="page-link" href="cart.php?page=1">1</a></li>
+<li class="page-item"><a class="page-link" href="cart.php?page=2">2</a></li>
+<li class="page-item"><a class="page-link" href="cart.php?page=3">3</a></li>
+<li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</nav>
           </div>
+
+
         </div>
 
 
